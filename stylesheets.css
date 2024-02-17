@@ -49,7 +49,7 @@ table {
 
 
 .container {
-    width: 75vw;
+    width: 100vw;
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -68,8 +68,59 @@ table {
     background-color: beige;
 }
 
+/* Main Content */
 .content {
     grid-column: 2/3;
     grid-row: 2/3;
     background-color: rgb(217, 217, 223);
+    display: grid;
+    grid-template-columns: 3.5fr 1fr;
+}
+.projects {
+    display: grid;
+    gap: 8px;
+    margin: 16px;
+    grid-template-columns: repeat(auto-fit, minMax(150px, 1fr));
+    grid-template-rows: 80px 1fr;
+}
+.projectHeader {
+    grid-column: 1/9;
+}
+
+.card {
+    background-color: white;
+    height: 100px;
+    width: 200px;
+    border-color: white;
+    border-left-color: yellow;
+    border-width: 8px;
+    border-style: solid;
+    border-radius: 8px;
+}
+
+.tabs {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    margin: 16px;
+
+}
+
+.announcements {
+    display: grid;
+    grid-template-rows: 40px repeat(auto-fit, minMax(40px, 1fr));
+    gap: 8px;
+    
+}
+
+.announcementCard {
+    background-color: white;  
+}
+
+.trending {
+    display: grid;
+    grid-template-rows: 32px repeat(auto-fit, minMax(40px, 1fr));
+    gap: 8px;
+}
+.trendingCard {
+    background-color: aliceblue;
 }
