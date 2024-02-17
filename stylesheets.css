@@ -65,7 +65,7 @@ table {
 .sidebar {
     grid-column: 1/2;
     grid-row: 1/3;
-    background-color: beige;
+    background-color: rgb(93, 197, 238);
 }
 
 /* Main Content */
@@ -76,26 +76,32 @@ table {
     display: grid;
     grid-template-columns: 3.5fr 1fr;
 }
+
+.projectContainer {
+    margin: 32px;
+}
 .projects {
     display: grid;
     gap: 8px;
     margin: 16px;
-    grid-template-columns: repeat(auto-fit, minMax(150px, 1fr));
-    grid-template-rows: 80px 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    
 }
 .projectHeader {
-    grid-column: 1/9;
+    font-size: 2em;
+    margin-left: 12px;
 }
 
 .card {
     background-color: white;
-    height: 100px;
-    width: 200px;
+    height: 200px;
+    max-width: 300px;
     border-color: white;
     border-left-color: yellow;
     border-width: 8px;
     border-style: solid;
     border-radius: 8px;
+    box-shadow: 6px 5px 5px rgb(100, 97, 97);
 }
 
 .tabs {
