@@ -63,7 +63,8 @@ table {
     display: grid;
     grid-template-columns: 1.25fr 1fr;
     grid-template-rows: repeat(2,1fr);
-    margin: 16px;
+    padding: 16px;
+    
 }
 .headerButton {
     min-width: 9vw;
@@ -207,27 +208,48 @@ table {
     display: grid;
     grid-template-rows: 1fr 1fr;
     margin: 16px;
+    margin-right: 5vw;
 
 }
 
 .announcements {
+    margin-top: 2vh;
+    height: 90%;
     display: grid;
-    grid-template-rows: 40px repeat(auto-fit, minMax(40px, 1fr));
+    grid-template-rows: repeat(auto-fit, minMax(40px, 1fr));
     gap: 8px;
     
 }
 
 .announcementCard {
-    background-color: white;  
+    background-color: white; 
+    border-radius: 8px;
 }
 
+.trendingContainer {
+    margin-top: 2vh;
+    
+}
 .trending {
     display: grid;
-    grid-template-rows: 32px repeat(auto-fit, minMax(40px, 1fr));
-    gap: 8px;
+    grid-template-rows: repeat(auto-fit, minMax(40px, 1fr));
+    margin-top: 2vh;
+    height: 80%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 5px 5px 5px rgb(203, 200, 200);
+    
 }
 .trendingCard {
-    background-color: aliceblue;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+.smallHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
 }
 
 html {
