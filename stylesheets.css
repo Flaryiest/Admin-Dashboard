@@ -214,18 +214,25 @@ table {
 
 .announcements {
     margin-top: 2vh;
-    height: 90%;
+    height: 85%;
     display: grid;
-    grid-template-rows: repeat(auto-fit, minMax(40px, 1fr));
-    gap: 8px;
-    
+    grid-template-rows: repeat(auto-fit, minMax(60px, 1fr));
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 5px 5px 5px rgb(203, 200, 200);
 }
 
 .announcementCard {
     background-color: white; 
-    border-radius: 8px;
+    
 }
-
+.announcementSeparator {
+    height: 1%;
+    background-color: rgb(195, 188, 188);
+    border-color: white;
+    margin-left: 8px;
+    margin-right: 8px;
+}
 .trendingContainer {
     margin-top: 2vh;
     
@@ -234,7 +241,7 @@ table {
     display: grid;
     grid-template-rows: repeat(auto-fit, minMax(40px, 1fr));
     margin-top: 2vh;
-    height: 80%;
+    height: 85%;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 5px 5px 5px rgb(203, 200, 200);
